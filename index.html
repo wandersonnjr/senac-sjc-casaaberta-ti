@@ -415,9 +415,9 @@
       <div class="cp-hero-inner">
         <p class="eyebrow">Depois da oficina</p>
         <h2 class="cp-title">Sua trilha no Curso Técnico de Informática</h2>
-        <p class="cp-sub">3 módulos, 16 unidades curriculares e 1200 horas de conteúdo. Clique em cada etapa da trilha abaixo para explorar o que você vai aprender — e vire as cartas para ver os detalhes de cada unidade.</p>
+        <p class="cp-sub">3 qualificações, 16 unidades curriculares e 1200 horas de conteúdo. Clique em cada etapa da trilha abaixo para explorar o que você vai aprender — e vire as cartas para ver os detalhes de cada unidade.</p>
 
-        <div class="cp-calc">
+        <div class="cp-calc" style="display: none;">
           <label for="cpRange">Quantas horas por semana você pretende estudar?</label>
           <input type="range" id="cpRange" min="2" max="20" step="1" value="8">
           <span class="cp-calc-result" id="cpCalcResult"></span>
@@ -442,7 +442,7 @@
     <p>Você praticou sequência, direção, repetição, decomposição, planejamento e modularização — os pilares da lógica de programação. É exatamente esse raciocínio que a gente aprofunda na UC9 do curso técnico.</p>
     <div class="course-box">
       <div class="k">Curso Técnico</div>
-      <div class="v">Curso de Informática — Módulo Desenvolvimento</div>
+      <div class="v">Curso de Informática — Qualificação de Desenvolvimento</div>
       <div class="v2">UC9 · Desenvolver Algoritmos · 108 horas</div>
     </div>
     <div class="modal-actions">
@@ -1006,7 +1006,7 @@
       node.className = 'cp-node ' + MOD_CLASS[i];
       node.innerHTML =
         '<div class="cp-node-circle">' + m.icon + '</div>' +
-        '<div class="cp-node-label">Módulo ' + (i+1) + '<br>' + m.name + '</div>' +
+        '<div class="cp-node-label">Qualificação ' + (i+1) + '<br>' + m.name + '</div>' +
         '<div class="cp-node-hours">' + m.totalHours + 'h</div>';
       node.addEventListener('click', ()=> selectModule(i));
       track.appendChild(node);
@@ -1038,7 +1038,7 @@
 
     detail.innerHTML =
       '<div class="cp-detail-head">' +
-        '<span class="cp-detail-title">Módulo ' + (i+1) + ' · ' + m.name + '</span>' +
+        '<span class="cp-detail-title">Qualificação ' + (i+1) + ' · ' + m.name + '</span>' +
         '<span class="cp-detail-hours">' + m.totalHours + 'h no total</span>' +
       '</div>' +
       '<div class="cp-cards">' + cardsHtml + '</div>' +
